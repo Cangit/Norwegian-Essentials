@@ -27,3 +27,4 @@
 
  - Minor political changes based on the Norwegian elections of 1933 & 1936
  - Bergen VP 5 (up from 1)
+ - Added coastal forts in real life østfold/vestfold (game province 14 & 3171) mimicking Bolærne fort, Rauøy fort, Mågerø fort, Greåker fort & Håøya fort.
