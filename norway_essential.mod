@@ -1,5 +1,5 @@
-name="Norwegian Generals"
-path="mod/nor_generals/"
+name="Norway Essential"
+path="mod/norway_essential/"
 tags={
 	"Historical"
 	"Graphics"
