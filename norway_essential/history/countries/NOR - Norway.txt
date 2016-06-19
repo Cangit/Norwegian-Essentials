@@ -210,10 +210,3 @@ create_navy_leader = {
 	traits = { spotter }
 	skill = 3
 }
-
-#create_corps_commander = {
-#	name = "Otto Ruge"
-#	picture = "Portrait_Norway_Otto_Ruge.png"
-#	traits = { winter_specialist }
-#	skill = 2
-#}
