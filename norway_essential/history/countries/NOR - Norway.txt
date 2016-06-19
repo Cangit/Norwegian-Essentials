@@ -1,4 +1,4 @@
-capital = 110
+﻿capital = 110
 
 oob = "NOR_1936"
 
@@ -164,7 +164,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Johan Ludwig Mowinckel"
 	desc = "POLITICS_JOHAN_LUDWIG_MOWINCKEL_DESC"
-	picture = "Portrait_Norway_Johan_Ludwig_Mowinckel.png"
+	picture = "Portrait_Norway_Johan_Ludwig_Mowinckel.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -175,7 +175,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Adam Egede-Nissen"
 	desc = "POLITICS_ADAM_EGEDE_NISSEN_DESC"
-	picture = "Portrait_Norway_Adam_Egede-Nissen.png"
+	picture = "Portrait_Norway_Adam_Egede-Nissen.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -185,28 +185,28 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Carl Gustav Fleischer"
-	picture = "Portrait_Norway_Carl_Gustav_Fleischer.png"
+	picture = "Portrait_Norway_Carl_Gustav_Fleischer.dds"
 	traits = { trickster winter_specialist }
 	skill = 4
 }
 
 create_corps_commander = {
 	name = "Kristian Laake"
-	picture = "Portrait_Norway_Kristian_Laake.png"
+	picture = "Portrait_Norway_Kristian_Laake.dds"
 	traits = { old_guard }
 	skill = 1
 }
 
 create_corps_commander = {
 	name = "Jacob Hvinden-Haug"
-	picture = "Portrait_Norway_Jacob_Hvinden-Haug.png"
+	picture = "Portrait_Norway_Jacob_Hvinden-Haug.dds"
 	traits = { winter_specialist }
 	skill = 1
 }
 
 create_navy_leader = {
 	name = "Elias Corneliussen"
-	picture = "Portrait_Norway_Elias_Corneliussen.png"
+	picture = "Portrait_Norway_Elias_Corneliussen.dds"
 	traits = { spotter }
 	skill = 3
 }
