@@ -22,6 +22,7 @@
   - Jacob Hvinden-Haug
   - Kristian Laake
  - Added event "War Bells", triggering the promotion of Otto Ruge to General
+ - Added event "Promotion", adding Henry Edward Diesen to the Admiral pool
 
 
 ### Game balance and adjustments
