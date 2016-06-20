@@ -4,4 +4,9 @@ spriteTypes = {
     name = "GFX_report_event_war_bells_ruge"
     texturefile = "gfx/event_pictures/report_event_war_bells_ruge.dds"
   }
+
+  spriteType = {
+    name = "GFX_report_event_promotion_henry_diesen"
+    texturefile = "gfx/event_pictures/report_event_norwegian_navy.dds"
+  }
 }

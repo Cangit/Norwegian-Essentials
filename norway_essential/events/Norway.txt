@@ -27,3 +27,34 @@ country_event = {
   }
 
 }
+
+country_event = {
+  id = norwayessential.2
+  title = "Promotion"
+  desc = "Promotion of Henry E. Diesen. Born in Trondhjem son of telegrapher Edward Diesen (1852–1909) and Johanne Christophine Stenersen (1855–1936). A naval officer since 1903, graduating from the Norwegian Naval Academy in 1905. Now promoted into the ranks of kontreadmiral."
+  picture = GFX_report_event_promotion_henry_diesen
+
+  fire_only_once = yes
+
+  mean_time_to_happen = {
+    days = 10
+  }
+
+  trigger = {
+    tag = NOR
+    date > 1938.2.1
+  }
+
+  option = {
+    name = "General Quarters"
+    NOR = {
+      create_navy_leader = {
+        name = "Henry Edward Diesen"
+        picture = "Portrait_Norway_Henry_Edward_Diesen.dds"
+        traits = { }
+        skill = 2
+      }
+    }
+  }
+
+}
