@@ -21,6 +21,7 @@
  - Added Norwegian generals to 1936 & 1939 start
   - Jacob Hvinden-Haug
   - Kristian Laake
+ - Added event "War Bells", triggering the promotion of Otto Ruge to General
 
 
 ### Game balance and adjustments

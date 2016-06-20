@@ -1,0 +1,29 @@
+﻿
+add_namespace = norwayessential
+
+country_event = {
+  id = norwayessential.1
+  title = "War bells"
+  desc = "When the father land gets tested, great leaders step forward. Col. Ruge is promoted to General"
+  picture = GFX_report_event_war_bells_ruge
+
+  fire_only_once = yes
+
+  trigger = {
+    tag = NOR
+    has_war = yes
+  }
+
+  option = {
+    name = "Encouraging"
+    NOR = {
+      create_corps_commander = {
+        name = "Otto Ruge"
+        picture = "Portrait_Norway_Otto_Ruge.dds"
+        traits = { winter_specialist }
+        skill = 2
+      }
+    }
+  }
+
+}

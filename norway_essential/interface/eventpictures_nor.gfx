@@ -1,0 +1,7 @@
+
+spriteTypes = {
+  spriteType = {
+    name = "GFX_report_event_war_bells_ruge"
+    texturefile = "gfx/event_pictures/report_event_war_bells_ruge.dds"
+  }
+}
