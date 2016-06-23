@@ -1,0 +1,686 @@
+focus_tree = {
+	id = norwegian_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = NOR
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+
+	###########################
+	# FOCUS BRANCH EFFORT
+	###########################
+
+	focus = {
+		id = NOR_army_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_army_effort_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = NOR_army_effort }
+		x = 0
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_equipment_effort_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_specialforces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = NOR_equipment_effort }
+		x = 0
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_specialforces_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_specialforces_2
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = NOR_specialforces }
+		x = 0
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_specialforces_2_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	# Aviation
+	focus = {
+		id = NOR_aviation_focus
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = NOR_army_effort }
+		x = 2
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_aviation_focus_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_aviation_expansion
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = NOR_aviation_focus }
+		x = 2
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_aviation_expansion_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	# Naval effort
+	focus = {
+		id = NOR_naval_effort
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = NOR_army_effort }
+		x = 5
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_naval_effort_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_flexible_navy
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = NOR_naval_effort }
+		x = 4
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_flexible_navy_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_naval_effort_2
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = NOR_flexible_navy }
+		x = 3
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_naval_effort_2_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_naval_NAV
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = NOR_naval_effort_2 }
+		x = 3
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_naval_NAV_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_naval_submarine
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = NOR_flexible_navy }
+		x = 5
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_naval_submarine_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_naval_destroyer
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = NOR_naval_submarine }
+		x = 5
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_naval_destroyer_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	#Shipyard focus
+	focus = {
+		id = NOR_shipyard_focus
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = NOR_naval_effort }
+		prerequisite = { focus = NOR_construction_effort }
+		x = 6
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_shipyard_focus_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_research_initiative
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = NOR_shipyard_focus }
+		x = 7
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_research_initiative_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	###########################
+	# FOCUS INDEPENDENCE EFFORT
+	###########################
+
+
+	focus = {
+		id = NOR_independence_effort
+		icon = GFX_goal_generic_demand_territory
+		x = 11
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_independence_effort_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	# Construction
+	focus = {
+		id = NOR_construction_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = NOR_independence_effort }
+		x = 8
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_construction_effort_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_construction_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = NOR_construction_effort }
+		x = 8
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_construction_effort_2_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_infrastructure_effort
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = NOR_northern_front }
+		prerequisite = { focus = NOR_construction_effort_2 }
+		x = 8
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_infrastructure_effort_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_construction_effort_3
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = NOR_infrastructure_effort }
+		x = 8
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_construction_effort_3_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	# Defence focus
+	focus = {
+		id = NOR_oslofjord_festning
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = NOR_independence_effort }
+		x = 11
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_oslofjord_festning_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_coastal_initiative
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = NOR_oslofjord_festning }
+		x = 12
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_coastal_initiative_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_northern_front
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = NOR_oslofjord_festning }
+		x = 10
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_northern_front_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_narvik_railroad
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = NOR_northern_front }
+		prerequisite = { focus = NOR_construction_effort_2 }
+		x = 10
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_narvik_railroad_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+
+	# Military facotry efforts
+	focus = {
+		id = NOR_secret_weapon
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = NOR_production_effort_3 }
+		x = 14
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_secret_weapon_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_production_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = NOR_independence_effort }
+		x = 14
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				144 = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			144 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NOR_production_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = NOR_production_effort }
+		x = 14
+		y = 2
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			143 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NOR_production_effort_3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = NOR_production_effort_2 }
+		x = 14
+		y = 3
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			142 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+}
