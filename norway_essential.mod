@@ -7,4 +7,4 @@ tags={
 }
 picture="PreviewImage.png"
 remote_file_id="706663630"
-supported_version="1.0.1"
+supported_version="1.1.0"

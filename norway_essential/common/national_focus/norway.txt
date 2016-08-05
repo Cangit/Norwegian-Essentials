@@ -296,7 +296,7 @@ focus_tree = {
 
 	focus = {
 		id = NOR_research_initiative
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_research
 		prerequisite = { focus = NOR_shipyard_focus }
 		x = 7
 		y = 3
@@ -681,6 +681,52 @@ focus_tree = {
 				}
 			}
 		}
+	}
+
+
+
+	###########################
+	# FOCUS STATE EFFORT
+	###########################
+
+	focus = {
+		id = NOR_state_focus
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_state_focus_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
+	}
+
+	focus = {
+		id = NOR_state_focus
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = NOR_state_focus_tt
+			}
+		}
+		complete_tooltip = {}
+		completion_reward = {}
+
 	}
 
 }
